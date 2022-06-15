@@ -1,0 +1,54 @@
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  --white: #fff;
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  background: var(--Cream);
+}
+
+.main {
+  margin-top: 120px;
+  width: 400px;
+}
+
+.header {
+  border-radius: 11px;
+  background-color: var(--Soft-red);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+  h1{
+    color:var(--white) ;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+  span{
+      font-weight: 500;
+      color:var(--white) ;
+      font-size: 1.5rem;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -7px;
+    right: 9px;
+  }
+}
+
+.section{
+    background-color: var(--white);
+    border-radius: 11px;
+    height: 300px;
+    .line{
+        border-bottom: 1px solid rgb(225, 222, 222);
+    }
+}
