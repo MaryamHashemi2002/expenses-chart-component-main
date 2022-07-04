@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,24 +15,15 @@
   </head>
   <body>
     <main>
-       <div class="mx-auto main">
-        <div class="row header">
+      <div class="mx-auto main">
+        <div class="header">
           <h1>My balance</h1>
           <span>$921.48</span>
           <img class="ms-auto" src="images/logo.svg" alt="" />
         </div>
-        <div class="row section">
+        <div class="section">
           <div class="container">
-            <div class="row line">
-              <p>Spending - Last 7 days</p>
-              <div class="col">mon</div>
-              <div class="col">tue</div>
-              <div class="col">wed</div>
-              <div class="col">thu</div>
-              <div class="col">fri</div>
-              <div class="col">sat</div>
-              <div class="col">sun</div>
-            </div>
+            <div class="chart" id="chart"></div>
             <h2>Total this month</h2>
             <span>$478.33</span>
             <span>+2.4%</span>
@@ -39,7 +32,8 @@
         </div>
       </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -47,8 +47,11 @@ body {
 .section{
     background-color: var(--white);
     border-radius: 11px;
-    height: 300px;
+    // height: 300px;
     .line{
         border-bottom: 1px solid rgb(225, 222, 222);
     }
+}
+.apexcharts-toolbar{
+  display: none !important;
 }
